@@ -913,7 +913,7 @@ mark {
 }
 
 .separated {
-  background-image: url(../img/border.png);
+  /* background-image: url(../img/border.png); */
   padding-top: 80px;
   padding-bottom: 80px;
   background-repeat: repeat-x;
