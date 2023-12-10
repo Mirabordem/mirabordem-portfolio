@@ -54,7 +54,7 @@
             <div class="hl-top">
                 <div class="hl-logo">
                     <a href="#">
-                        N
+                        M
                     </a>
                 </div>
             </div>
@@ -69,21 +69,13 @@
                         <i class="far fa-address-card"></i>
                     </a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#resume" data-toggle="tooltip" title="RESUME">
-                        <i class="far fa-file"></i>
-                    </a>
-                </li>
+
                 <li>
                     <a class="nav-link" href="#work" data-toggle="tooltip" title="WORK">
                         <i class="fas fa-briefcase"></i>
                     </a>
                 </li>
-                <li>
-                    <a class="nav-link" href="#blog" data-toggle="tooltip" title="BLOG">
-                        <i class="fas fa-blog"></i>
-                    </a>
-                </li>
+
                 <li>
                     <a class="nav-link" href="#contactus" data-toggle="tooltip" title="CONTACT">
                         <i class="fas fa-id-card-alt"></i>
@@ -103,6 +95,11 @@
                     <label>mirabordem@gmail.com</label>
                 </div>
 
+                <a href="https://www.linkedin.com/in/miroslawa-borkowska-3b72332a0/" target="_blank" rel="noopener noreferrer" class="linkedin-button">
+                    <img src="/linkedin.svg" alt="LinkedIn Icon" class="linkedin-icon" style="width: 24px; height: 24px; fill: white;">
+                    CONNECT ON LINKEDIN
+                </a>
+
                 <div class="hb-lang">
                 </div>
             </div>
@@ -111,14 +108,42 @@
                     <div class="col-lg-7">
                         <div class="type-box">
 
-                            <h1 class="font-alt">Hi, I'm Mira</h1>
+                            <h1 id="greeting" class="font-alt">Hi, I'm Mira</h1>
 
-                            <p class="lead">Full-stack Developer | Creative UX/UI Designer</p>
-                            <p class="lead">Awarded Exhibiting Sculptor | Lifetime Yogi</p>
+                        <!-- Include Typed.js library -->
+                        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+                        <!-- HTML structure -->
+                        <div id="typed-output" style="color: rgb(255, 145, 0); font-weight: 500; font-size: 2.3em; height: 2em; margin-top: 20px;"></div>
+
+                        <!-- Initialize Typed.js -->
+                        <script>
+                        var options = {
+                        strings: ["Full-stack Developer", "Creative UX/UI Designer", "Awarded Exhibiting Sculptor", "Lifetime Yogi"],
+                        typeSpeed: 0, // typing speed in milliseconds
+                        backSpeed: 10, // backspacing speed in milliseconds
+                        startDelay: 0, // time before starting to type
+                        backDelay: 1500, // delay before starting to backspace
+                        loop: true, // loop the animation
+                        showCursor: false, // hide the blinking cursor
+                        preStringTyped: function() {
+                           // Code to execute before each string is typed
+                           // This can be used to set a fixed height for the container
+                        document.getElementById("typed-output").style.height = "3em";
+                        },
+                        onStringTyped: function() {
+                           // Code to execute after each string is typed
+                        },
+                        };
+
+                        var typed = new Typed("#typed-output", options);
+                        </script>
+
+
                             <p class="desc">A passionate software engineer and experienced, skilled designer, who enjoys
                                 turning ideas into captivating digital experiences. My approach combines technical expertise with
-                               a keen eye for design, ensuring that every project reflects a perfect
-                               blend of functionality and aesthetics.</p>
+                                a keen eye for design, ensuring that every project reflects a perfect
+                                blend of functionality and aesthetics.</p>
                         </div>
                     </div>
                 </div>
@@ -126,6 +151,8 @@
             <div class="hb-me" style="background-image: url(static/img/home-banner.png);"></div>
         </section>
         <!-- End Home -->
+
+
         <!-- about us -->
         <section id="about" class="section dark-bg">
             <div class="container">
@@ -134,19 +161,49 @@
                         <div class="about-me">
                             <div class="img">
                                 <div class="img-in">
-                                    <img src="static/img/650x650.jpg" title="" alt="">
+                                    <img src="static/img/about-me.jpg" title="" alt="">
                                 </div>
-                                <div class="nav social-icons justify-content-center">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest"></i></a>
-                                </div>
+
                             </div>
                             <div class="info">
-                                <p>Ux/Ui Designer</p>
-                                <h3>Nairobi Gadot</h3>
+                                <p>Software Engineer</p>
+                                <h3>Miroslawa (Mira) Borkowska</h3>
+
+                                <div class="social-media-links">
+                                    <a
+                                        class="linkedin-button1a"
+                                        href="https://www.linkedin.com/in/miroslawa-mira-borkowska-3b72332a0/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/linkedin.svg"
+                                            alt="LinkedIn Icon"
+                                            class="linkedin-icon"
+                                            style="width: 26px; height: 26px; fill: white;"
+                                        />
+                                        CONNECT ON LINKEDIN
+                                    </a>
+                                </div>
+
+                                <div class="social-media-links2">
+                                    <a
+                                        class="github-button1"
+                                        href="https://github.com/Mirabordem"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src="/github.svg"
+                                            alt="Github Icon"
+                                            class="github-icon"
+                                            style="width: 22px; height: 22px; fill: white;"
+                                        />
+                                        CONNECT ON GITHUB
+                                    </a>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -156,8 +213,16 @@
                                 <h3>Biography</h3>
                             </div>
                             <div class="about-text">
-                                <p>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
-                                <p>I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and create web elements for amazing people around the world. I like work with new people. New people new Experiences.</p>
+                                <p>I am a tech enthusiast and seasoned artist passionate about problem-solving through innovation.
+                                    Technology, for me, is not just a tool but a medium for creation. I approach coding as an art form,
+                                    sculpting impactful applications with precision and passion.
+                                    As a lifetime Yogi, who at the same time continuously embraces new technologies and innovative solutions,
+                                    I bring a holistic approach to my work, finding inspiration in nature.</p>
+                                <p>As an exhibited and awarded sculptor,
+                                    I aim to create value and meaning where it didn't exist before, merging art and technology
+                                    to build extraordinary products. Together, we can build applications that go beyond the ordinary.
+                                    Eager to learn and tackle new challenges, bring fresh perspectives,
+                                    I'm a coder and I'm an artist shaping the future, one line of code at a time.</p>
                             </div>
                             <div class="info-list">
                                 <div class="row">
@@ -165,19 +230,13 @@
                                         <ul>
                                             <li>
                                                 <label>Name: </label>
-                                                <span>Nairobi Gadot</span>
+                                                <span>Miroslawa Borkowska</span>
                                             </li>
-                                            <li>
-                                                <label>Birthday: </label>
-                                                <span>4th April 1994</span>
-                                            </li>
-                                            <li>
-                                                <label>Age: </label>
-                                                <span>26 years</span>
-                                            </li>
+
+
                                             <li>
                                                 <label>Address: </label>
-                                                <span>San Francisco</span>
+                                                <span>Princeton NJ</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -185,20 +244,14 @@
                                         <ul>
                                             <li>
                                                 <label>Phone: </label>
-                                                <span>(+38) 469 2344 2364</span>
+                                                <span>732 245 2004</span>
                                             </li>
                                             <li>
                                                 <label>Email: </label>
-                                                <span>info@domainname.com</span>
+                                                <span>mirabordem@gmail.com</span>
                                             </li>
-                                            <li>
-                                                <label>Skype: </label>
-                                                <span>nairob.40</span>
-                                            </li>
-                                            <li>
-                                                <label>Freelance: </label>
-                                                <span>Available</span>
-                                            </li>
+
+
                                         </ul>
                                     </div>
                                 </div>
@@ -243,6 +296,10 @@
                 </div>
                 <!-- separated -->
                 <div class="separated"></div>
+
+
+
+
                 <!-- End separated -->
                 <div class="title">
                     <h3>Awards.</h3>
@@ -768,7 +825,7 @@
                 <div class="col-md-6 m-10px-tb">
                     <div class="nav justify-content-center justify-content-md-start">
 
-                        <a href="https://www.linkedin.com/in/miroslawa-borkowska-3b72332a0/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/in/miroslawa-mira-borkowska-3b72332a0/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="https://github.com/Mirabordem"><i class="fab fa-github creator-link-icon"></i></a>
 
                     </div>

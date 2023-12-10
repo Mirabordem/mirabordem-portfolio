@@ -26,7 +26,8 @@ html {
 }
 
 body {
-  background: #10101a;
+  /* background: #10101a; */
+  background: black;
   color: rgba(255, 255, 255, 0.8);
   font-family: "Rubik", monospac;
   line-height: 1.7;
@@ -41,6 +42,7 @@ body.theme-light {
 
 .font-alt {
   font-family: "Rubik", serif;
+  height: 56px;
 }
 
 img {
@@ -118,7 +120,7 @@ mark {
   }
 }
 /* ----------------------
-*	owl 
+*	owl
 ---------------------------*/
 .owl-dots {
   text-align: center;
@@ -955,10 +957,13 @@ mark {
   background: #f7f7ff;
 }
 .home-banner .container {
+  /* border: 2px solid red; */
+  margin-left: 110px;
   position: relative;
   z-index: 1;
 }
 .home-banner .hb-top-fixed {
+
   position: absolute;
   padding: 30px 50px 0;
   top: 0;
@@ -972,10 +977,10 @@ mark {
   }
 }
 .home-banner .hb-top-fixed .hb-info label {
-  margin: 0;
+  margin-top: 10px;
   color: #fff;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
 }
 .theme-light .home-banner .hb-top-fixed .hb-info label {
   color: #0b0b13;
@@ -1063,12 +1068,23 @@ mark {
   }
 }
 .home-banner .type-box .lead {
-  color: #fff;
+  color: rgb(255, 145, 0);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
+
+.home-banner .type-box .lead1 {
+  color: rgb(255, 145, 0);
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+
+
 .theme-light .home-banner .type-box .lead {
   color: #0b0b13;
 }
@@ -1080,7 +1096,62 @@ mark {
 }
 .home-banner .type-box .desc {
   max-width: 450px;
+  font-size: 20px;
+  margin-top: 30px;
 }
+
+.linkedin-button {
+  margin-left: 80px !important;
+  margin-top: 0 !important;
+  background-color: rgb(255, 153, 0) !important;
+  color: white !important;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px !important;
+}
+
+.linkedin-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin-icon {
+  /* width: 26px; */
+  /* height: 24px; */
+  margin-right: 10px;
+  fill: white;
+}
+
+.github-icon {
+  /* height: 24px; */
+  margin-right: 10px;
+  margin-bottom: 4px;
+  background-color: white;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 25px;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 18px;
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+
+
+#greeting {
+  font-size: 86px;
+  margin-bottom: 40px;
+}
+
+
 .home-banner .type-box .btn-bar {
   padding-top: 10px;
 }
