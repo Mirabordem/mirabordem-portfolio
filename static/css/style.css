@@ -1205,6 +1205,12 @@ mark {
   margin-bottom: 40px;
 }
 
+.btn-bar1 {
+  margin-top: 50px;
+  font-size: 18px;
+  /* border: 2px solid red; */
+
+}
 
 .home-banner .type-box .btn-bar {
   padding-top: 10px;
@@ -1777,5 +1783,3 @@ mark {
 
   padding-left: 200px;
 }
-
-
