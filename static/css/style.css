@@ -960,7 +960,7 @@ mark {
 }
 .home-banner .container {
   /* border: 2px solid red; */
-  margin-left: 110px;
+  /* margin-left: 110px; */
   position: relative;
   z-index: 1;
 }
