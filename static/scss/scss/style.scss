@@ -199,7 +199,7 @@
 				font-size: 70px;
 			}
 			@include down-sm {
-				font-size: 50px;	
+				font-size: 50px;
 			}
 		}
 		.lead {
@@ -229,7 +229,7 @@
 				position: relative;
 				text-decoration: none;
 				padding-left: 0;
-				@include transition(ease all 0.35s); 
+				@include transition(ease all 0.35s);
 				.theme-light & {
 					color: $px-dark;
 				}
@@ -246,7 +246,7 @@
 					width: 0;
 					height: 2px;
 					background: currentColor;
-					@include transition(ease all 0.35s); 
+					@include transition(ease all 0.35s);
 				}
 				&:hover {
 					padding-left: 45px;
@@ -286,9 +286,9 @@
 		}
 		h3 {
 			font-weight: 500;
-			
+
 			font-size: 30px;
-			
+
 		}
 		p {
 			margin: 0;
@@ -449,7 +449,7 @@
 	background: $px-dark;
 	padding: 15px;
 	border-radius: 10px;
-	overflow: hidden;	
+	overflow: hidden;
 	.theme-light & {
 		background: $px-white;
 	}
@@ -462,7 +462,7 @@
 	h6 {
 		color: $px-white;
 		margin: 0 0 5px;
-		font-size: 18px; 
+		font-size: 18px;
 		.theme-light & {
 			color: $px-dark;
 		}
@@ -571,7 +571,7 @@
 	}
 	.rb-right {
 		p {
-			margin-bottom:0; 
+			margin-bottom:0;
 		}
 	}
 }
@@ -604,14 +604,14 @@
 	    .theme-light & {
 			color: $px-dark;
 		}
-	} 
+	}
 	.skill-bar {
 		position: relative;
 		background: rgba($px-white, .2);
 		.theme-light & {
 			background: rgba($px-dark, .1);
 		}
-		
+
 		.skill-bar-in {
 			width: 80px;
 			position: relative;
